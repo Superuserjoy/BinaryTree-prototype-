@@ -75,7 +75,6 @@ void binarytree::levelOrderConstruct(string input){
     }
     else{
       *q.front()=currentNode;
-      cout<<(*q.front())->data1;
       q.push(&((*q.front())->left));
       q.push(&((*q.front())->right));
 //The operators Precedence '->' > '*' = '&', so we need to separate operators with quote. 
@@ -89,5 +88,5 @@ int main(){
   test.preOrder(test.root);
   test.postOrder(test.root);
   test.inOrder(test.root);
-//  test.levelOrder();
+  test.levelOrder();
 }
